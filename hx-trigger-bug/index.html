@@ -1,0 +1,16 @@
+<script src="https://demo.htmx.org"></script>
+
+<div hx-swap="outerHTML" hx-get="/example">
+  <button _="on click trigger refreshTable">
+    Send refresh
+  </button>
+</div>
+
+<!-- Simulates a server response -->
+<template url="/example">
+<div hx-swap="outerHTML" hx-get="/example">
+  <button _="on click trigger refreshTable">
+    Send refresh again
+  </button>
+</div>
+</template>
