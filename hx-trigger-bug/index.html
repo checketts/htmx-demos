@@ -101,11 +101,13 @@
 
 </script>
 
-<div>
-<div hx-swap="outerHTML" hx-get="/example">
+<div id="root">
+<div id="second">
+<div id="third" hx-swap="outerHTML" hx-get="/example">
   <button _="on click trigger refreshTable">
     Send refresh
   </button>
+</div>
 </div>
 </div>
 
