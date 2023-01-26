@@ -112,18 +112,14 @@
 </div>
 
 <!-- Simulates a server response -->
-<template url="/example">
-<div hx-swap="outerHTML" hx-get="/example2">
+<template url="/example"><div hx-swap="outerHTML" hx-get="/example2">
   <button _="on click trigger refreshTable">
     Send refresh again
   </button>
-</div>
-</template>
+</div></template>
 
-<template url="/example2">
-<div hx-swap="outerHTML" hx-get="/example">
+<template url="/example2"><div hx-swap="outerHTML" hx-get="/example">
   <button _="on click trigger refreshTable">
     Send refresh again again
   </button>
-</div>
-</template>
+</div></template>
